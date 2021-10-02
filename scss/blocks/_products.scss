@@ -1,0 +1,160 @@
+.product__title {
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #151875;
+  margin-top: 81px;
+  text-transform: uppercase;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  width: 270px;
+  position: relative;
+  border: 1px solid #E7E7E7;
+  padding-bottom: 22px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card__image {
+  width: 270px;
+  height: 272px;
+  border-radius: 10px 10px 0  0;
+  background-color: rgb(255, 189, 127);
+}
+
+.card ~ .card {
+  margin-left: 10px;
+}
+
+.card .icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+}
+
+.card__cart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card__heart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-top: 41px;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 16px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper > .inner {
+  display: flex;
+  grid-gap: 1px;
+  transition: all 1s ease-in-out;
+}
+
+.content p {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fb2e86;
+  margin-top: 22px;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.content h3 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151875;
+}
+
+.content button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  left: -30px;
+}
+
+.map {
+  margin-top: 40px;
+}
+.map > button {
+  all: unset;
+  background: #11406c;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 30px;
+  height: 10px;
+  width: 30px;
+  transition: all 0.5s ease;
+}
+.map > button.active:after {
+  background: #fb2e86;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+  height: 10px;
+  width: 40px;
+}
+
