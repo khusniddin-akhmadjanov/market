@@ -823,8 +823,14 @@ header {
   width: 40px;
 }
 
-.latest {
+.latest-section-wrapper {
+  padding: 0;
+  margin: 0;
   margin-top: 80px;
+}
+
+.latest {
+  margin-top: 20px;
 }
 
 .latest__title {
@@ -841,27 +847,25 @@ header {
   text-align: center;
 }
 
-.latest__item {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 330px;
-}
-
-.latest__item ~ .latest__item {
-  margin-left: 20px;
-}
-
 .latest__item-active {
+  padding: 0;
+  margin: 0;
   color: #fb2e86;
+}
+
+.latest__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.latest__item:hover .latest__image {
+  background-color: #6a96e7;
 }
 
 .latest__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,6 +884,15 @@ header {
   height: 222px;
   background-color: #f3f4ff;
   border-radius: 5px;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.latest__icons {
+  display: block;
+  position: absolute;
+  top: 150px;
+  right: 10px;
 }
 
 .latest__text-box {
@@ -919,17 +932,9 @@ header {
 }
 
 .latest__card {
-  padding: 0;
-  margin: 0;
-  width: 1110px;
-  position: relative;
-}
-
-.latest__card-image {
-  position: relative;
-  left: -150px;
-  width: 657px;
-  height: 585px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .latest__cart-button {
@@ -977,9 +982,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
 }
 
 .latest__wrapper > .latest__inner {
@@ -1000,20 +1006,8 @@ header {
           align-items: center;
 }
 
-.latest__title {
-  font-family: "Inter" , roboto;
-  font-size: 40px;
-  font-weight: 700;
-  text-align: left;
-  line-height: 48px;
-  color: #010000;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
 .latest__subtitle {
-  font-family: "Inter" , roboto;
+  font-family: "Inter", roboto;
   font-size: 20px;
   font-weight: 300;
   text-align: left;
@@ -1027,7 +1021,7 @@ header {
   border: none;
   padding: 13px 27px;
   cursor: pointer;
-  font-family: "Inter" , roboto;
+  font-family: "Inter", roboto;
   font-size: 20px;
   font-weight: 600;
   text-align: left;
@@ -1036,17 +1030,15 @@ header {
 }
 
 .latest__map {
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 17px;
 }
 
 .latest__map > button {
   all: unset;
   cursor: pointer;
   margin: 5px;
-  color: #010000;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1057,15 +1049,17 @@ header {
 }
 
 .latest__map > button.latest__active:after {
-  background-color: #fb2e86;
   content: "";
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 50%;
+  top: 120%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  width: 100px;
+  height: 2px;
+  background-color: #fb2e86;
 }
 
 .hero-section-wrapper {

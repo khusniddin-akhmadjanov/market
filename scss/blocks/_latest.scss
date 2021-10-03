@@ -1,207 +1,202 @@
-.latest {
+.latest-section-wrapper {
+    padding: 0;
+    margin: 0;
     margin-top: 80px;
 }
 
+.latest {
+  margin-top: 20px;
+}
+
 .latest__title {
-    @include site-font-family;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 30px;
-    color: $primary-color;
-    text-align: center;
+  @include site-font-family;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: $primary-color;
+  text-align: center;
 }
 
 .latest__buttons {
-    margin-top: 17px;
-    text-align: center;
-}
-
-.latest__item {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 330px;
-}
-
-.latest__item  ~ .latest__item{
-    margin-left: 20px;  
+  margin-top: 17px;
+  text-align: center;
 }
 
 .latest__item-active {
-    color: $secondary-color;
+  padding: 0;
+  margin: 0;
+  color: $secondary-color;
 }
 
+.latest__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.latest__item:hover .latest__image {
+    background-color: #6a96e7;
+}
+
+
 .latest__list {
-    @include list-unstyled;
-    margin-top: 47px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  @include list-unstyled;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .latest__image {
-    width: 330px;
-    height: 222px;
-    background-color: #f3f4ff;
-    border-radius: 5px;
+  width: 330px;
+  height: 222px;
+  background-color: #f3f4ff;
+  border-radius: 5px;
+  transition: all .5s ease-in;
+}
+
+.latest__icons {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 10px;
 }
 
 .latest__text-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 9px;    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 9px;
 }
 
 .latest__text {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: $primary-color;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $primary-color;
 }
 
 .latest__price {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .latest__old-price {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: $secondary-color;
-    text-decoration: line-through;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $secondary-color;
+  text-decoration: line-through;
 }
 
-  
 .latest__card {
-    padding: 0;
-    margin: 0;
-    width: 1110px;
-    position: relative;
-  }
-  
-.latest__card-image {
-    position: relative;
-    left: -150px;
-    width: 657px;
-    height: 585px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  .latest__cart-button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
-  .latest__heart-button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
+.latest__cart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.latest__heart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .latest__center {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-  }
-  
-  .latest__wrapper {
-    display: flex;
-    grid-gap: 16px;
-    overflow: hidden;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  
-  .latest__wrapper > .latest__inner {
-    display: flex;
-    grid-gap: 1px;
-    transition: all 1s ease-in-out;
-  }
-  
- .latest__content {
-     display: flex;
-     align-items: center;
- }
-
-  .latest__title {
-    font-family: "Inter" , roboto;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: left;
-    line-height: 48px;
-    color: #010000;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-  }
-
-  .latest__subtitle {
-    font-family: "Inter" , roboto;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: left;
-    line-height: 24px;
-    color: $secondary-color;
-    margin-bottom: 63px;
-  }
-
-  .latest__button {
-    background-color: $secondary-color;
-    border: none;
-    padding: 13px 27px;
-    cursor: pointer; 
-
-    font-family: "Inter" , roboto;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    line-height: 24px;
-    color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
-  .latest__map {
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 80px;
-  }
+.latest__wrapper {
+  display: flex;
+  grid-gap: 16px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
+}
 
-  .latest__map > button {
-    all: unset;
-    cursor: pointer;
-    margin: 5px;
-    color: #010000;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transition: all 0.5s ease;
-  }
-  .latest__map > button.latest__active:after {
-    background-color: #fb2e86;
-    content: "";
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    transition: all 0.5s ease;
-  }
-  
+.latest__wrapper > .latest__inner {
+  display: flex;
+  grid-gap: 1px;
+  transition: all 1s ease-in-out;
+}
+
+.latest__content {
+  display: flex;
+  align-items: center;
+}
+
+.latest__subtitle {
+  font-family: "Inter", roboto;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 24px;
+  color: $secondary-color;
+  margin-bottom: 63px;
+}
+
+.latest__button {
+  background-color: $secondary-color;
+  border: none;
+  padding: 13px 27px;
+  cursor: pointer;
+
+  font-family: "Inter", roboto;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.latest__map {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+}
+
+.latest__map > button {
+  all: unset;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.5s ease;
+
+}
+
+.latest__map > button.latest__active:after {
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 120%;
+  transition: all 0.5s ease;
+  width: 100px;
+  height: 2px;
+  background-color: $secondary-color;
+}
+
