@@ -1,17 +1,25 @@
+.hero-section-wrapper {
+    background-image: url(../../images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    padding-bottom: 30px;
+}
 
 .hero__card {
     padding: 0;
     margin: 0;
     width: 1110px;
     position: relative;
-    border: 1px solid #E7E7E7;
-    padding-bottom: 22px;
-    height: 600px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-image: url(../../images/hero-bg.jpg);
   }
   
+.hero__card-image {
+    position: relative;
+    left: -150px;
+    width: 657px;
+    height: 585px;
+}
+
   .hero__cart-button {
     border: none;
     outline: none;
@@ -51,53 +59,54 @@
     transition: all 1s ease-in-out;
   }
   
-  .hero__content p {
-    padding: 0;
-    margin: 0;
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #fb2e86;
-    margin-top: 22px;
-  }
-  
-  .hero__content div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 10px;
-  }
-  
-  .hero__content h3 {
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
+ .hero__content {
+     display: flex;
+     align-items: center;
+ }
+
+  .hero__title {
+    font-family: "Inter" , roboto;
+    font-size: 40px;
+    font-weight: 700;
     text-align: left;
-    color: #151875;
-  }
-  
-  .hero__content button {
+    line-height: 48px;
+    color: #010000;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
+  }
+
+  .hero__subtitle {
+    font-family: "Inter" , roboto;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    color: $secondary-color;
+    margin-bottom: 63px;
+  }
+
+  .hero__button {
+    background-color: $secondary-color;
     border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    position: relative;
-    top: 3px;
-    left: -30px;
-  }
-  
+    padding: 13px 27px;
+    cursor: pointer; 
+
+    font-family: "Inter" , roboto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 24px;
+    color: #ffffff;
+}
+
   .hero__map {
-    margin-top: 40px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    margin-top: 80px;
   }
+
   .hero__map > button {
     all: unset;
     background: #11406c;
