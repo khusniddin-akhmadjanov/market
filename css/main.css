@@ -1297,4 +1297,231 @@ header {
   height: 2px;
   background-color: #fb2e86;
 }
+
+.advertise-section-wrapper {
+  background-color: #f3f4ff;
+  padding-top: 30px;
+  margin-top: 160px;
+  padding-bottom: 44px;
+}
+
+.advertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.advertise__left {
+  background-image: url("../../images/Vector.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 461px;
+  height: 426px;
+}
+
+.advertise__left-1 {
+  background-image: url("../../images/Vector (1).png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 461px;
+  height: 426px;
+}
+
+.advertise__left-2 {
+  background-image: url("../../images/Vector (2).png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 461px;
+  height: 426px;
+}
+
+.advertise__image {
+  margin-top: 30px;
+}
+
+.advertise__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+  color: #151875;
+  width: 458px;
+  margin-bottom: 24px;
+}
+
+.advertise__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advertise__item {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151875;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+
+.advertise__first {
+  width: 5px;
+  padding: 1px 8px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  border-radius: 50%;
+  color: #8fce13;
+  background: #8fce13;
+  margin-right: 20px;
+}
+
+.advertise__second {
+  width: 5px;
+  padding: 1px 8px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  border-radius: 50%;
+  color: #fb2e86;
+  background: #fb2e86;
+  margin-right: 20px;
+}
+
+.advertise__third {
+  width: 5px;
+  padding: 1px 8px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  border-radius: 50%;
+  color: #151875;
+  background: #151875;
+  margin-right: 20px;
+}
+
+.advertise__right > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+}
+
+.advertise__right > div > button {
+  background-color: #fb2e86;
+  color: #fff;
+  width: 173px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  margin-right: 14px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.advertise__button:hover {
+  background-color: #151875;
+}
+
+.advertise__max {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #151875;
+  margin-bottom: 2px;
+}
+
+.advertise__price {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151875;
+}
+
+.tranding {
+  margin-top: 120px;
+}
+
+.tranding-section-title {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: #151875;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tranding__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tranding__item {
+  width: 275px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 24px 5px #f3f4ff;
+          box-shadow: 0 0 24px 5px #f3f4ff;
+  cursor: pointer;
+}
+
+.tranding__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151875;
+}
+
+.tranding__price {
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151875;
+}
+
+.tranding__old-price {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #151875;
+  text-decoration: line-through;
+  opacity: 50%;
+}
 /*# sourceMappingURL=main.css.map */

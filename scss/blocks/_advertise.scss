@@ -1,0 +1,138 @@
+.advertise-section-wrapper {
+    background-color: #f3f4ff;
+    padding-top: 30px;
+    margin-top: 160px;
+    padding-bottom: 44px;
+}
+
+.advertise {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.advertise__left {
+    background-image: url("../../images/Vector.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 461px;
+    height: 426px;
+}
+
+.advertise__left-1 {
+    background-image: url("../../images/Vector\ \(1\).png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 461px;
+    height: 426px;
+}
+
+.advertise__left-2 {
+    background-image: url("../../images/Vector\ \(2\).png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 461px;
+    height: 426px;
+}
+
+.advertise__image {
+    margin-top: 30px;
+}
+
+.advertise__title {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 40px;
+    color: $primary-color;
+    width: 458px;
+    margin-bottom: 24px;
+}
+
+.advertise__list {
+    @include list-unstyled;
+}
+
+.advertise__item {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $primary-color;
+    margin-bottom: 13px;
+    text-transform: capitalize;
+}
+
+.advertise__first {
+    width: 5px;
+    padding: 1px 8px;
+    transform: scale(0.5);
+    border-radius: 50%;
+    color: rgb(143, 206, 19);
+    background: rgb(143, 206, 19);
+    margin-right: 20px;
+}
+
+.advertise__second {
+    width: 5px;
+    padding: 1px 8px;
+    transform: scale(0.5);
+    border-radius: 50%;
+    color: $secondary-color;
+    background: $secondary-color;
+    margin-right: 20px;
+}
+
+.advertise__third {
+    width: 5px;
+    padding: 1px 8px;
+    transform: scale(0.5);
+    border-radius: 50%;
+    color: $primary-color;
+    background: $primary-color;
+    margin-right: 20px;
+}
+
+.advertise__right > div {
+    display: flex;
+    margin-top: 18px;
+}
+
+.advertise__right > div > button {
+    background-color: $secondary-color;
+    color: #fff;
+    width: 173px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    margin-right: 14px;
+    transition: all .3s ease-in;
+}
+
+.advertise__button:hover {
+    background-color: $primary-color;
+}
+
+.advertise__max {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: $primary-color;
+    margin-bottom: 2px;
+}
+
+.advertise__price {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $primary-color;
+}
