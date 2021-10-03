@@ -34,7 +34,8 @@
 }
 
 .latest__item:hover .latest__image {
-    background-color: #6a96e7;
+    background-color: $primary-color;
+    cursor: pointer;
 }
 
 

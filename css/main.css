@@ -647,7 +647,6 @@ header {
   width: 270px;
   position: relative;
   border: 1px solid #E7E7E7;
-  padding-bottom: 22px;
   border-radius: 10px;
   text-align: center;
 }
@@ -657,6 +656,40 @@ header {
   height: 272px;
   border-radius: 10px 10px 0  0;
   background-color: #f3f4ff;
+}
+
+.card:hover .content {
+  background-color: #151875;
+  cursor: pointer;
+}
+
+.card:hover .card__image {
+  background-color: #fff;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  cursor: pointer;
+}
+
+.card:hover .content > p {
+  color: #fff;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.card:hover .content > div > h3 {
+  color: #fff;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.card:hover .content div > button > svg > path {
+  fill: #fff;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.content div > button > svg:hover {
+  fill: #fb2e86;
 }
 
 .card__img {
@@ -737,6 +770,13 @@ header {
   transition: all 1s ease-in-out;
 }
 
+.content {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 .content p {
   padding: 0;
   margin: 0;
@@ -748,7 +788,6 @@ header {
   letter-spacing: 0em;
   text-align: center;
   color: #fb2e86;
-  margin-top: 22px;
 }
 
 .content div {
@@ -859,7 +898,8 @@ header {
 }
 
 .latest__item:hover .latest__image {
-  background-color: #6a96e7;
+  background-color: #151875;
+  cursor: pointer;
 }
 
 .latest__list {
