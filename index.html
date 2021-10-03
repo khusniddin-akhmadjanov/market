@@ -63,6 +63,38 @@
 <div class="hero-section-wrapper">
   <div class="container">
     <div class="hero-section hero">
+      <div class="hero__center">
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <div class="hero__card">
+              <div class="hero__content">
+                <div class="hero__left">
+                  <h1 class="hero__title">machine to chek your products quality</h1>
+                </div>
+              </div>
+            </div>
+            <div class="hero__card"> 
+              <div class="hero__content">
+                
+              </div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__content">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__map ">
+          <button class="hero__active hero__first"></button>
+          <button class="hero__second"></button>
+          <button class="hero__third"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
@@ -486,16 +518,35 @@
         slides.style.transform = "translateX(-25%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains('third')) {
-        slides.style.transform = 'translatex(50%)';
+        slides.style.transform = 'translatex(-50%)';
         e.target.classList.add('active');
       }
       else if (e.target.classList.contains('fourth')) {
-        slides.style.transform = 'translatex(75%)';
+        slides.style.transform = 'translatex(-75%)';
         e.target.classList.add('active');
       }
     }
   });
+  const heroButtonsWrapper = document.querySelector(".hero__map");
+  const heroSlides = document.querySelector(".hero__inner");
 
+  heroButtonsWrapper.addEventListener("click", e => {
+    if (e.target.nodeName === "BUTTON") {
+      Array.from(heroButtonsWrapper.children).forEach(item =>
+        item.classList.remove("hero__active")
+      );
+      if (e.target.classList.contains("hero__first")) {
+        heroSlides.style.transform = "translateX(-0%)";
+        e.target.classList.add("hero__active");
+      } else if (e.target.classList.contains("hero__second")) {
+        heroSlides.style.transform = "translateX(-33.3333333%)";
+        e.target.classList.add("hero__active");
+      } else if (e.target.classList.contains('hero__third')) {
+        heroSlides.style.transform = 'translatex(-66.6666666%)';
+        e.target.classList.add('hero__active');
+      }
+    }
+  });
 </script>
 </body>
 
