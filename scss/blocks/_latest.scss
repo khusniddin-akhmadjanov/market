@@ -78,3 +78,130 @@
     color: $secondary-color;
     text-decoration: line-through;
 }
+
+  
+.latest__card {
+    padding: 0;
+    margin: 0;
+    width: 1110px;
+    position: relative;
+  }
+  
+.latest__card-image {
+    position: relative;
+    left: -150px;
+    width: 657px;
+    height: 585px;
+}
+
+  .latest__cart-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .latest__heart-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+.latest__center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .latest__wrapper {
+    display: flex;
+    grid-gap: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .latest__wrapper > .latest__inner {
+    display: flex;
+    grid-gap: 1px;
+    transition: all 1s ease-in-out;
+  }
+  
+ .latest__content {
+     display: flex;
+     align-items: center;
+ }
+
+  .latest__title {
+    font-family: "Inter" , roboto;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 48px;
+    color: #010000;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  .latest__subtitle {
+    font-family: "Inter" , roboto;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    color: $secondary-color;
+    margin-bottom: 63px;
+  }
+
+  .latest__button {
+    background-color: $secondary-color;
+    border: none;
+    padding: 13px 27px;
+    cursor: pointer; 
+
+    font-family: "Inter" , roboto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+  .latest__map {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 80px;
+  }
+
+  .latest__map > button {
+    all: unset;
+    cursor: pointer;
+    margin: 5px;
+    color: #010000;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.5s ease;
+  }
+  .latest__map > button.latest__active:after {
+    background-color: #fb2e86;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    transition: all 0.5s ease;
+  }
+  

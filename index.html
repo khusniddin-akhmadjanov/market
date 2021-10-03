@@ -464,16 +464,16 @@
 
 <!-- LATEST -->
 
-<div class="latest-section-wrapper">
+<!-- <div class="latest-section-wrapper">
   <div class="container">
     <div class="latest-section latest">
       <h2 class="latest__title">
         Leatest products
       </h2>
-      <div class="latest__buttons">
-        <button class="latest__item latest__item-active">New Prodcuts</button>
-        <button class="latest__item">Best Seller</button>
-        <button class="latest__item">Featured Prodcuts</button>
+      <div class="latest__buttons latest__map">
+        <button class="latest__item latest__item-active latest__first">New Prodcuts</button>
+        <button class="latest__item latest__second">Best Seller</button>
+        <button class="latest__item latest__third">Featured Prodcuts</button>
       </div>
       <ul class="latest__list">
         <li class="latest__item">
@@ -553,10 +553,69 @@
       </ul>
     </div>
   </div>
+</div> -->
+
+<div class="latest-section-wrapper">
+  <div class="container">
+    <div class="latest-section hero">
+      <div class="latest__center">
+        <div class="latest__map ">
+          <button class="latest__active latest__first">djalja</button>
+          <button class="latest__second">dada</button>
+          <button class="latest__third">dadsaa</button>
+        </div>
+        <div class="latest__wrapper">
+          <div class="latest__inner">
+            <div class="latest__card">
+              <div class="latest__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nulla unde magnam qui. Omnis reprehenderit culpa laborum veniam vero nulla aut expedita mollitia et officiis est, labore dolorum sit vitae?
+              </div>
+            </div>
+            <div class="latest__card">
+              <div class="latest__content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit natus, nemo facilis accusamus, laudantium placeat esse dolorem deleniti assumenda modi, labore debitis animi saepe architecto illo? Cumque blanditiis soluta fugit?
+              </div>
+            </div>  
+             <div class="latest__card">
+              <div class="latest__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, iure, dolor dolorem ipsum dignissimos tempora nesciunt quibusdam molestias dolores ex vel inventore numquam architecto earum repellat fugiat consectetur, modi recusandae.
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 
 <script>
   // https://colorlib.com/preview/theme/seogo/
+
+  // HERO CARUSEL
+
+  const heroButtonsWrapper = document.querySelector(".hero__map");
+  const heroSlides = document.querySelector(".hero__inner");
+
+  heroButtonsWrapper.addEventListener("click", e => {
+    if (e.target.nodeName === "BUTTON") {
+      Array.from(heroButtonsWrapper.children).forEach(item =>
+        item.classList.remove("hero__active")
+      );
+      if (e.target.classList.contains("hero__first")) {
+        heroSlides.style.transform = "translateX(-0%)";
+        e.target.classList.add("hero__active");
+      } else if (e.target.classList.contains("hero__second")) {
+        heroSlides.style.transform = "translateX(-33.3333333%)";
+        e.target.classList.add("hero__active");
+      } else if (e.target.classList.contains('hero__third')) {
+        heroSlides.style.transform = 'translatex(-66.6666666%)';
+        e.target.classList.add('hero__active');
+      }
+    }
+  });
+
+// FEATURED CARUSEL
 
   const buttonsWrapper = document.querySelector(".map");
   const slides = document.querySelector(".inner");
@@ -582,23 +641,26 @@
       }
     }
   });
-  const heroButtonsWrapper = document.querySelector(".hero__map");
-  const heroSlides = document.querySelector(".hero__inner");
 
-  heroButtonsWrapper.addEventListener("click", e => {
+  //LATEST CARUSEL
+
+  const latestButtonsWrapper = document.querySelector(".latest__map");
+  const latestSlides = document.querySelector(".latest__inner");
+
+  latestButtonsWrapper.addEventListener("click", e => {
     if (e.target.nodeName === "BUTTON") {
-      Array.from(heroButtonsWrapper.children).forEach(item =>
-        item.classList.remove("hero__active")
+      Array.from(latestButtonsWrapper.children).forEach(item =>
+        item.classList.remove("latest__active")
       );
-      if (e.target.classList.contains("hero__first")) {
-        heroSlides.style.transform = "translateX(-0%)";
-        e.target.classList.add("hero__active");
-      } else if (e.target.classList.contains("hero__second")) {
-        heroSlides.style.transform = "translateX(-33.3333333%)";
-        e.target.classList.add("hero__active");
-      } else if (e.target.classList.contains('hero__third')) {
-        heroSlides.style.transform = 'translatex(-66.6666666%)';
-        e.target.classList.add('hero__active');
+      if (e.target.classList.contains("latest__first")) {
+        latestSlides.style.transform = "translateX(-0%)";
+        e.target.classList.add("latest__active");
+      } else if (e.target.classList.contains("latest__second")) {
+        latestSlides.style.transform = "translateX(-25%)";
+        e.target.classList.add("latest__active");
+      } else if (e.target.classList.contains('latest__third')) {
+        latestSlides.style.transform = 'translatex(-50%)';
+        e.target.classList.add('latest__active');
       }
     }
   });
