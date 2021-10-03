@@ -411,6 +411,10 @@ body {
   margin: 0;
 }
 
+.heartBack {
+  background-color: red;
+}
+
 .top-section-wrapper {
   background-color: #2f1ac4;
   padding: 19px 0;
@@ -628,6 +632,168 @@ header {
   border-radius: 0px;
 }
 
+.hero-section-wrapper {
+  background-image: url(../../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 57px;
+  padding-bottom: 30px;
+}
+
+.hero__card {
+  padding: 0;
+  margin: 0;
+  width: 1110px;
+  position: relative;
+}
+
+.hero__card-image {
+  position: relative;
+  left: -150px;
+  width: 657px;
+  height: 585px;
+}
+
+.hero__cart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.hero__heart-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.hero__center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 16px;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero__wrapper > .hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 1px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__title {
+  font-family: "Inter" , roboto;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 48px;
+  color: #010000;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__subtitle {
+  font-family: "Inter" , roboto;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 24px;
+  color: #fb2e86;
+  margin-bottom: 63px;
+}
+
+.hero__button {
+  background-color: #fb2e86;
+  border: none;
+  padding: 13px 27px;
+  cursor: pointer;
+  font-family: "Inter" , roboto;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.hero__map {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.hero__map > button {
+  all: unset;
+  background: #11406c;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 30px;
+  height: 10px;
+  width: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hero__map > button.hero__active:after {
+  background: #fb2e86;
+  content: "";
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+  height: 10px;
+  width: 40px;
+}
+
 .product__title {
   font-family: "Inter";
   font-size: 25px;
@@ -664,7 +830,7 @@ header {
 }
 
 .card:hover .card__image {
-  background-color: #fff;
+  background-color: #2e5692;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
   cursor: pointer;
@@ -678,14 +844,19 @@ header {
 
 .card:hover .content > div > h3 {
   color: #fff;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .card:hover .content div > button > svg > path {
-  fill: #fff;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  display: none;
+}
+
+.card:hover .card__image-link {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .content div > button > svg:hover {
@@ -695,6 +866,31 @@ header {
 .card__img {
   position: relative;
   top: 20px;
+}
+
+.card__image-link {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 8px 14px;
+  position: relative;
+  top: 235px;
+  z-index: 1;
+  background-color: #fb2e86;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: scale(0.01);
+          transform: scale(0.01);
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  line-height: 14px;
 }
 
 .card ~ .card {
@@ -898,7 +1094,7 @@ header {
 }
 
 .latest__item:hover .latest__image {
-  background-color: #151875;
+  background-color: #2e5692;
   cursor: pointer;
 }
 
@@ -1100,167 +1296,5 @@ header {
   width: 100px;
   height: 2px;
   background-color: #fb2e86;
-}
-
-.hero-section-wrapper {
-  background-image: url(../../images/hero-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 57px;
-  padding-bottom: 30px;
-}
-
-.hero__card {
-  padding: 0;
-  margin: 0;
-  width: 1110px;
-  position: relative;
-}
-
-.hero__card-image {
-  position: relative;
-  left: -150px;
-  width: 657px;
-  height: 585px;
-}
-
-.hero__cart-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.hero__heart-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.hero__center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-gap: 16px;
-  overflow: hidden;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.hero__wrapper > .hero__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-gap: 1px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero__title {
-  font-family: "Inter" , roboto;
-  font-size: 40px;
-  font-weight: 700;
-  text-align: left;
-  line-height: 48px;
-  color: #010000;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.hero__subtitle {
-  font-family: "Inter" , roboto;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: left;
-  line-height: 24px;
-  color: #fb2e86;
-  margin-bottom: 63px;
-}
-
-.hero__button {
-  background-color: #fb2e86;
-  border: none;
-  padding: 13px 27px;
-  cursor: pointer;
-  font-family: "Inter" , roboto;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.hero__map {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-}
-
-.hero__map > button {
-  all: unset;
-  background: #11406c;
-  cursor: pointer;
-  margin: 5px;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 30px;
-  height: 10px;
-  width: 30px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.hero__map > button.hero__active:after {
-  background: #fb2e86;
-  content: "";
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  border-radius: 30px;
-  height: 10px;
-  width: 40px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -34,7 +34,7 @@
 }
 
 .card:hover .card__image {
-  background-color: #fff;
+  background-color: rgb(46, 86, 146);
   transition: all .5s ease-in;
   cursor: pointer;
 }
@@ -46,12 +46,16 @@
 
 .card:hover .content > div >h3{
   color: #fff;
-  transition: all .5s ease-in;
+  transform: translateX(40px);
+  transition: all .3s ease-in;
 }
 
 .card:hover .content div > button > svg >path{
-  fill: #fff;
-  transition: all .5s ease-in;
+  display: none;
+}
+
+.card:hover  .card__image-link{
+  transform: scale(1);
 }
 
 .content div > button > svg:hover {
@@ -61,6 +65,27 @@
 .card__img {
   position: relative;
   top: 20px;
+}
+
+
+.card__image-link {
+  @include link-unstyled;
+  padding: 8px 14px;
+  position: relative;
+  top: 235px;
+  z-index: 1;
+  background-color: $secondary-color;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.01);
+  transition: all .5s ease-in;
+  line-height: 14px;
 }
 
 .card ~ .card {
@@ -193,4 +218,3 @@
   height: 10px;
   width: 40px;
 }
-
