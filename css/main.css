@@ -891,4 +891,28 @@ header {
           align-items: center;
   margin-top: 9px;
 }
+
+.latest__text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #151875;
+}
+
+.latest__price {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.latest__old-price {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb2e86;
+  text-decoration: line-through;
+}
 /*# sourceMappingURL=main.css.map */
