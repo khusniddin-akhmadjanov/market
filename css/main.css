@@ -2099,4 +2099,128 @@ footer {
   margin-right: auto;
   margin-bottom: 42px;
 }
+
+.login-section {
+  padding: 0;
+  margin: 0;
+  background-color: #f3f4ff;
+}
+
+.login {
+  padding: 0;
+  margin: 0;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 35px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  border-radius: 10px;
+  margin-top: 149px;
+  margin-bottom: 140px;
+}
+
+.login__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  color: #151875;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login__text {
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb2e86;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.login__input {
+  border: none;
+  background-color: #f3f4ff;
+  outline: none;
+  margin-left: 20px;
+}
+
+.login__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 299px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #353b71;
+  padding: 11px 4px 12px 30px;
+  border-radius: 10px;
+}
+
+.login__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 299px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #353b71;
+  padding: 11px 4px 12px 30px;
+  border-radius: 10px;
+  margin-top: 36px;
+}
+
+.login__signIn {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 14px;
+  color: #151875;
+}
+
+.login__signUp {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 14px;
+  color: #fb2e86;
+}
+
+.login__link {
+  text-align: center;
+  width: 220px;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__sign {
+  text-align: center;
+  width: 220px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*# sourceMappingURL=main.css.map */

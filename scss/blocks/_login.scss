@@ -1,0 +1,109 @@
+.login-section {
+    padding: 0;
+    margin: 0;
+    background-color: #f3f4ff;
+}
+
+.login {
+    padding: 0;
+    margin: 0;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 35px;
+    padding-top: 20px;
+    padding-bottom: 41px;
+    border-radius: 10px;
+    margin-top: 149px;
+    margin-bottom: 140px;
+}
+
+.login__title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login__text {
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.login__input {
+    border: none;
+    background-color: #f3f4ff;
+    outline: none;
+    margin-left: 20px;
+}
+
+.login__email {
+    display: flex;
+    align-items: center;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #353b71;
+    padding: 11px 4px 12px 30px;
+    border-radius: 10px;
+}
+
+.login__password {
+    display: flex;
+    align-items: center;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #353b71;
+    padding: 11px 4px 12px 30px;
+    border-radius: 10px;
+    margin-top: 36px;
+}
+
+.login__signIn {
+    @include link-unstyled;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 14px;
+    color: $primary-color;
+}
+
+.login__signUp {
+    @include link-unstyled;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: center;
+    line-height: 14px;
+    color: $secondary-color;
+}
+
+.login__link {
+    text-align: center;
+    width: 220px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login__sign {
+    text-align: center;
+    width: 220px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
