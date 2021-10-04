@@ -1,0 +1,30 @@
+.newslater-section-wrapper {
+    background-image: url("../../images/hero-bg.jpg");
+    padding: 41px 0;
+    text-align: center;
+}
+
+.newslater__title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: $primary-color;
+    text-transform: capitalize;
+    width: 540px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+}
+
+.newslater__link {
+    @include link-unstyled;
+    padding: 8px 32px;
+    background-color: $secondary-color;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}

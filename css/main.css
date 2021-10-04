@@ -1810,4 +1810,38 @@ header {
   color: #151875;
   margin-top: 4px;
 }
+
+.newslater-section-wrapper {
+  background-image: url("../../images/hero-bg.jpg");
+  padding: 41px 0;
+  text-align: center;
+}
+
+.newslater__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  color: #151875;
+  text-transform: capitalize;
+  width: 540px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+}
+
+.newslater__link {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 8px 32px;
+  background-color: #fb2e86;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
