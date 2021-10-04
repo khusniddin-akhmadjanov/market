@@ -1,0 +1,91 @@
+.discount-section-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.discount__title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.discount__left-title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: $primary-color;
+    margin-bottom: 15px;;
+}
+
+.discount__subtitle {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: $secondary-color;
+    width: 295px;
+    margin-bottom: 15px;
+}
+
+.discount__left > div {
+    display: flex;
+}
+
+.discount__left > div > ul {
+    @include list-unstyled;
+    margin-right: 15px;
+}
+
+.discount__left > div > ul > li {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: $primary-color;
+    opacity: 50%;
+}
+
+.discount__left > div > ul > li::before {
+    content: url("../../images/tick.svg");
+    position: relative;
+    top: 1px;
+}
+
+.discount__button {
+    padding: 0;
+    margin: 0;
+    margin-top: 28px;
+    padding: 4px 20px;
+    cursor: pointer;
+    width: 124px;
+    height: 25px;
+    border: none;
+    background-color: $secondary-color;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+.discount__button:hover {
+background-color: $primary-color;
+}
+
+.discount__right {
+    background-image: url("../../images/Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}

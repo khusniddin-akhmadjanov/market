@@ -1,0 +1,50 @@
+.top-categories-section-wrapper {
+    margin-top: 97px;
+}
+
+.top__title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.top__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.top-categories__item {
+    text-align: center;
+}
+
+.top-categories__item > img {
+    background-color: #f3f4ff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.top-categories__item > h3 {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: $secondary-color;
+    margin-top: 12px;
+}
+
+.top-categories__item > p {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $primary-color;
+    margin-top: 4px;
+}
