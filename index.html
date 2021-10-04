@@ -22,10 +22,20 @@
       </div>
       <div class="top__right">
         <ul class="top-right__list">
-          <li class="top__right-item"><a class="top__right-link" href="#">English <img class="top__right-img"
-                src="./images/arrow.svg" alt="arrow"></a></li>
-          <li class="top__right-item"><a class="top__right-link" href="#">USD <img class="top__right-img"
-                src="./images/arrow.svg" alt="arrow"></a></li>
+          <li class="top__right-item">
+            <select name="language" id="language-id">
+              <option value="Eng">Eng</option>
+              <option value="Rus">Rus</option>
+              <option value="Uzb">Uzb</option>
+            </select>
+          </li>
+          <li class="top__right-item">
+            <select name="language" id="language-id">
+              <option value="USD">USD</option>
+              <option value="RUB">RUB</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </li>
           <li class="top__right-item"><a class="top__right-link" href="#">Login <img class="top__right-img"
                 src="./images/login.svg" alt="login"></a></li>
           <li class="top__right-item"><a class="top__right-link" href="#">Wishlist <img class="top__right-img"
@@ -59,7 +69,7 @@
 </header>
 
 <!-- HERO SECTION -->
-<!-- 
+
 <div class="hero-section-wrapper">
   <div class="container">
     <div class="hero-section hero">
@@ -117,11 +127,11 @@
 
 </div>
 </div>
-</div> -->
+</div>
 
 <!-- PRODUCTS SECTION -->
 
-<!-- <div class="product-section-wrapper">
+<div class="product-section-wrapper">
   <div class="container">
     <div class="product-section product">
       <h2 class="product__title">
@@ -541,11 +551,11 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- LATEST -->
 
-<!-- <div class="latest-section-wrapper">
+<div class="latest-section-wrapper">
   <div class="container">
     <div class="latest-section latest">
       <div class="latest__center">
@@ -1012,7 +1022,7 @@
       </ul>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- DISCOUNT SECTION -->
 
@@ -1149,20 +1159,40 @@
     </div>
     <div class="footer__contact">
       <h2 class="footer__title">contact us</h2>
-      <div><a class="footer__item" href="#">@yourDomain</a></div>
-      <div><a class="footer__item" href="#">@t.me//YouDomain</a></div>
-      <div><a class="footer__item" href="#">@yourDomain</a></div>
+      <div><a class="footer__item" href="#"><img src="./images/facebook.png" alt="facebook"> @yourDomain</a></div>
+      <div><a class="footer__item" href="#"><img src="./images/telegram.png" alt="telegram"> @t.me//YouDomain</a></div>
+      <div><a class="footer__item" href="#"><img src="./images/instagram.png" alt="instagram"> @yourDomain</a></div>
     </div>
     <div class="footer__subscribe">
       <h2 class="footer__title">subscribe to news</h2>
       <div><a class="footer__item" href="#">You can buy anything you like our shop online buy E-mail</a></div>
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <input class="footer__input" type="email" placeholder="Your E-mail" autocomplete="off" required>
+        <input class="footer__input" type="email" name="email" placeholder="Your E-mail" autocomplete="off" required>
         <button class="footer__button" type="submit">Subscribe</button>
       </form>
     </div>
   </div>
   <hr class="footer__line">
+  <ul class="payment__list">
+    <li class="payment__item">
+      <img src="./images/Humo.png" alt="home">
+    </li>
+    <li class="payment__item">
+      <img src="./images/Click.png" alt="click">
+    </li>
+    <li class="payment__item">
+      <img src="./images/Uzcard.png" alt="uzcard">
+    </li>
+    <li class="payment__item">
+      <img src="./images/Payme.png" alt="payme">
+    </li>
+    <li class="payment__item">
+      <img src="./images/Uzbekistan pochta.png" alt="uzbekista pochtasi">
+    </li>
+    <li class="payment__item">
+      <img src="./images/Fargo.png" alt="fargo">
+    </li>
+  </ul>
 </div>
 <script>
   // https://colorlib.com/preview/theme/seogo/

@@ -105,11 +105,24 @@ footer {
 .footer__item {
     @include link-unstyled;
     font-family: "Inter";
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: $primary-color;
     margin-bottom: 4px;
+    transition: all .2s ease-in;
+}
+
+.footer__item:hover {
+    color: $secondary-color;
+}
+
+.footer__item > img {
+    position: relative;
+    top: 1px;
+    left: -5px;
 }
 
 .footer__input {
@@ -122,6 +135,7 @@ footer {
     color: $primary-color;
     background-color: #f3f4ff;
     border: none;
+    outline: none;
 }
 
 .footer__button {
@@ -129,7 +143,8 @@ footer {
     margin: 0;
     width: 100px;
     margin-top: 10px;
-    height: 37px;
+    height: 30px;
+    transform: translate(-50px , -2px);
     background-color: $primary-color;
     color: #fff;
     border: none;
@@ -139,6 +154,11 @@ footer {
     font-weight: 800;
     font-size: 12px;
     line-height: 14px;
+    transition: all .3s ease-in;
+}
+
+.footer__button:hover {
+    background-color: $secondary-color;
 }
 
 .footer__line {
@@ -150,4 +170,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
     border: none;
+}
+
+.payment__list {
+    @include list-unstyled;
+    display: flex;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
 }

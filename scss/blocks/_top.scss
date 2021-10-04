@@ -82,3 +82,16 @@
   color: #fff;
   text-decoration: none;
 }
+
+select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+option {
+  background-color: #fff;
+  color: $primary-color;
+  outline: none;
+}
