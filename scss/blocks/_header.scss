@@ -16,12 +16,17 @@ header {
 
 .header__site-logo {
   display: inline;
+  cursor: pointer;
 }
 
 .header__logo-image {
   display: block;
   width: 94px;
   height: 40px;
+}
+
+.header__site-logo:active {
+  opacity: 80%;
 }
 
 .header__list {
@@ -52,6 +57,15 @@ header {
   letter-spacing: 0em;
   text-align: left;
   color: #151875;
+  transition: all .3s ease-in;
+}
+
+.header__link:hover {
+  color: #fb2e86;
+}
+
+.header__link:active {
+  opacity: 50%;
 }
 
 .link-active {

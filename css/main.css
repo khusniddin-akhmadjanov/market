@@ -560,12 +560,17 @@ header {
 
 .header__site-logo {
   display: inline;
+  cursor: pointer;
 }
 
 .header__logo-image {
   display: block;
   width: 94px;
   height: 40px;
+}
+
+.header__site-logo:active {
+  opacity: 80%;
 }
 
 .header__list {
@@ -602,6 +607,16 @@ header {
   letter-spacing: 0em;
   text-align: left;
   color: #151875;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.header__link:hover {
+  color: #fb2e86;
+}
+
+.header__link:active {
+  opacity: 50%;
 }
 
 .link-active {
@@ -734,7 +749,7 @@ header {
 }
 
 .hero__title {
-  font-family: "Inter" , roboto;
+  font-family: "Inter", roboto;
   font-size: 40px;
   font-weight: 700;
   text-align: left;
@@ -746,7 +761,7 @@ header {
 }
 
 .hero__subtitle {
-  font-family: "Inter" , roboto;
+  font-family: "Inter", roboto;
   font-size: 20px;
   font-weight: 300;
   text-align: left;
@@ -760,12 +775,18 @@ header {
   border: none;
   padding: 13px 27px;
   cursor: pointer;
-  font-family: "Inter" , roboto;
+  font-family: "Inter", roboto;
   font-size: 20px;
   font-weight: 600;
   text-align: left;
   line-height: 24px;
   color: #ffffff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.hero__button:hover {
+  background-color: #151875;
 }
 
 .hero__map {
