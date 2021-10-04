@@ -29,10 +29,38 @@
     cursor: pointer;
 }
 
+.tranding__img{
+    background-color: #f3f4ff;
+    transition: all .3s ease-in;
+}
+
+.tranding__item ~ .tranding__item {
+    margin-left: 16px;
+}
+
+.tranding__item >div > button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -100px;
+    top: -50px;
+}
+
+.tranding__content {
+    background-color: #fff;
+    position: relative;
+    top: -14px;
+}
+
+.tranding__item:hover .tranding__img {
+    background-color: rgb(46, 86, 146);
+}
+
 .tranding__title {
     padding: 0;
     margin: 0;
-    margin-top: 29px;
     font-family: "Inter";
     font-weight: 500;
     font-size: 15px;
@@ -72,13 +100,25 @@
 }
 
 .tranding__second-item {
-    position: relative;
+    transition: all .3s ease-in;
 }   
 
 .tranding__second-img {
     background-color: #f3f4ff;
     padding-right: 20px;
     border-radius: 5px;
+}
+
+.tranding__second-item:hover .tranding__second-img {
+    background-color:  rgb(46, 86, 146);
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.tranding__third-list-img:hover{
+    background-color: rgb(46, 86, 146);
+    transition: all .3s ease-in;
+    cursor: pointer;
 }
 
 .tranding__second-item p{
@@ -124,8 +164,8 @@
 .tranding__third-list li> div > span {
     font-family: "Inter";
     font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 23px;
     color: $primary-color;
 }
  
