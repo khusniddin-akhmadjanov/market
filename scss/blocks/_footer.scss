@@ -1,0 +1,153 @@
+footer {
+    background-image: url("../../images/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+    padding-top: 21px;
+    padding-bottom: 41px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__top-title {
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    width: 327px;
+    margin-bottom: 6px;
+}
+
+.footer__top-text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.footer__top-list{
+    @include list-unstyled;
+    display: flex;
+}
+
+.footer__top-item  ~ .footer__top-item {
+    margin-left: 37px;
+}
+
+.footer__top-link {
+    transition: all 0.3s ease-in;
+}
+
+.footer__top-link:hover {
+    transform: rotate(360deg);
+}
+
+.footer__top-link:hover  path{
+    fill: $secondary-color;
+    transition: all 0.3s ease-in;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.footer__address h3{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $primary-color;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.footer__address {
+    width: 220px;
+}
+
+.footer__information {
+    width: 180px;
+}
+
+.footer__subscribe {
+    width: 380px;
+}
+
+.footer__address  p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #404e9c;
+}
+
+.footer__title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.footer__item {
+    @include link-unstyled;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $primary-color;
+    margin-bottom: 4px;
+}
+
+.footer__input {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 250px;
+    height: 37px;
+    padding: 0 10px;
+    color: $primary-color;
+    background-color: #f3f4ff;
+    border: none;
+}
+
+.footer__button {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    margin-top: 10px;
+    height: 37px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.footer__line {
+    background-color: #757575;
+    width: 960px;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
