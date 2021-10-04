@@ -62,3 +62,70 @@
     text-decoration: line-through;
     opacity: 50%;
 }
+
+.tranding__second-list {
+    @include list-unstyled;
+    margin-top: 178px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.tranding__second-item {
+    position: relative;
+}   
+
+.tranding__second-img {
+    background-color: #f3f4ff;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.tranding__second-item p{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: $primary-color;
+    position: relative;
+    top: -230px;
+    left: 10px;
+}
+
+.tranding__second-item button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: $secondary-color;
+    cursor: pointer;
+    position: relative;
+    top: -225px;
+    left: 10px;
+}
+
+.tranding__third-list {
+    @include list-unstyled; 
+}
+.tranding__third-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.tranding__third-list li> img {
+    background-color: #f3f4ff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-right: 10px;
+}
+
+.tranding__third-list li> div > span {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: $primary-color;
+}
+ 
