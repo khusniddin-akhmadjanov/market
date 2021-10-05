@@ -50,3 +50,63 @@
     position: relative;
     top: 2px;
 }
+
+.related {
+    margin-top: 87px;
+}
+
+.related__title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    color: $primary-color;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.related__list {
+    @include list-unstyled;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.related__img {
+    width: 180px;
+    height: 200px;
+    background-color: #f3f4ff;
+}
+
+.related__badges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.related__badges  p {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: $primary-color;
+}
+
+.related__badges svg{
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.related__badges svg:hover path {
+    fill: #fad739;
+}
+
+.related__price {
+    margin-top: 3px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    color: $primary-color;
+}
