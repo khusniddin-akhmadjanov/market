@@ -42,16 +42,18 @@
 }
 
 .login__input {
+    width: 220px;
     border: none;
     background-color: #f3f4ff;
     outline: none;
     margin-left: 20px;
+    font-size: 18px;
 }
 
 .login__email {
     display: flex;
     align-items: center;
-    width: 299px;
+
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #353b71;
@@ -62,7 +64,7 @@
 .login__password {
     display: flex;
     align-items: center;
-    width: 299px;
+
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #353b71;

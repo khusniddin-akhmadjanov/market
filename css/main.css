@@ -2144,10 +2144,12 @@ footer {
 }
 
 .login__input {
+  width: 220px;
   border: none;
   background-color: #f3f4ff;
   outline: none;
   margin-left: 20px;
+  font-size: 18px;
 }
 
 .login__email {
@@ -2157,7 +2159,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 299px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #353b71;
@@ -2172,7 +2173,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 299px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #353b71;
