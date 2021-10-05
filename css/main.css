@@ -2406,6 +2406,7 @@ footer {
   border-radius: 50%;
   padding: 2px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .products-info__share p {
@@ -2450,5 +2451,58 @@ footer {
 
 .social-link:nth-of-type(3) {
   color: #0f4bbb;
+}
+
+.products-description-section {
+  background-color: #f3f4ff;
+  margin-top: 90px;
+  padding: 10px 5px;
+}
+
+.description__title {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #151875;
+  margin-bottom: 8px;
+}
+
+.description__subtitle {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #151875;
+  margin-top: 24px;
+}
+
+.description__text {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #151875;
+  opacity: 50%;
+  margin-top: 12px;
+  margin-bottom: 21px;
+  text-align: justify;
+}
+
+.more-details {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #151875;
+  opacity: 50%;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.more-details::before {
+  content: url(../../images/streleka.svg);
+  position: relative;
+  top: 2px;
 }
 /*# sourceMappingURL=main.css.map */
