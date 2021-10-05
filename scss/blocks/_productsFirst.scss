@@ -1,0 +1,96 @@
+.productsFisrt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsFisrt__left-title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $primary-color;
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+.productFirst__label1 {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $primary-color;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.productFirst__label2 {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $secondary-color;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.productsFisrt__right {
+    margin-top: 35px;
+}
+
+.productsFisrt__right-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 42px 10px 24px;
+    background-color: #f3f4ff;
+    margin-bottom: 30px;
+}
+
+.productsFisrt__right-content {
+    width: 600px;
+    margin-left: 20px;
+}
+
+.productsFisrt__right-content  h2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $primary-color;
+}
+
+.productsFisrt__right-content p {
+    width: 450px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: $primary-color;
+    margin-top: 10px;
+}
+
+.productsFisrt__right-content > div > span {
+    font-family: "Inter";
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: $primary-color
+}
+
+.productsFisrt__right-content > div > span > img {
+    cursor: pointer;
+}
+
+.productsFisrt__right-icons {
+    margin-top: 12px;
+}
+
+.productsFisrt__right-icons img {
+    background-color: #c5c7df;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
