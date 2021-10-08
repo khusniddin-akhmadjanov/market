@@ -2682,4 +2682,125 @@ footer {
   padding: 5px;
   cursor: pointer;
 }
+
+.details {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.img-magnifier-container {
+  width: 500px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.img-magnifier-container::after {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -450px;
+  left: 450px;
+  content: url("../../images/search-loop.png");
+}
+
+.details__left-image {
+  border-right: 2px solid #686868;
+  padding-right: 20px;
+}
+
+.details__right {
+  margin-left: 20px;
+}
+
+.details__suptext {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #686868;
+  opacity: 70%;
+  margin-bottom: 10px;
+}
+
+.detrails__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #151875;
+  margin-bottom: 10px;
+}
+
+.details__subtext {
+  font-family: "Inter";
+  width: 552px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #686868;
+  opacity: 70%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #686868;
+}
+
+.details__text {
+  font-family: "Inter";
+  text-align: justify;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #686868;
+  padding-top: 33px;
+  margin-bottom: 33px;
+}
+
+.details__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details__price {
+  font-family: "Inter";
+  text-align: justify;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fb2e86;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.details__link {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: "Inter";
+  text-align: justify;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #151875;
+  padding: 13px 24px;
+  margin-left: 16px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.details__link:hover {
+  background-color: #fb2e86;
+}
 /*# sourceMappingURL=main.css.map */

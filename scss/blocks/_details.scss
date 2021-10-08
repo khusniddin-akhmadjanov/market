@@ -1,0 +1,107 @@
+.details {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-magnifier-container {
+    width: 500px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.img-magnifier-container::after {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -450px;
+  left: 450px;
+  content: url("../../images/search-loop.png");
+}
+
+.details__left-image {
+    border-right: 2px solid #686868;
+    padding-right: 20px;
+}
+
+.details__right {
+    margin-left: 20px;
+}
+
+.details__suptext {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #686868;
+    opacity: 70%;
+    margin-bottom: 10px;
+}
+
+.detrails__title {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: $primary-color;
+    margin-bottom: 10px;
+}
+
+.details__subtext {
+    font-family: "Inter";
+    width: 552px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #686868;
+    opacity: 70%;  
+    padding-bottom: 30px;
+    border-bottom: 1px solid #686868;
+}
+
+.details__text {
+    font-family: "Inter";
+    text-align: justify;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #686868;
+    padding-top: 33px;
+    margin-bottom: 33px;
+}
+
+.details__price-box {
+    display: flex;
+    align-items: center;
+}
+
+.details__price {
+    font-family: "Inter";
+    text-align: justify;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: $secondary-color;
+    transition: all .3s ease-in;
+}
+
+.details__link {
+    @include link-unstyled;
+    font-family: "Inter";
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background-color: $primary-color;
+    padding: 13px 24px;
+    margin-left: 16px;
+    transition: all .3s ease-in;
+}
+
+.details__link:hover {
+    background-color: $secondary-color;
+}
+

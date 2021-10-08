@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Details</title>
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="shortcut icon" href="./images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
               <option value="EUR">EUR</option>
             </select>
           </li>
-          <li class="top__right-item"><a class="top__right-link" href="#">Login <img class="top__right-img"
+          <li class="top__right-item"><a class="top__right-link" href="login.html">Login <img class="top__right-img"
                 src="./images/login.svg" alt="login"></a></li>
           <li class="top__right-item"><a class="top__right-link" href="#">Wishlist <img class="top__right-img"
                 src="./images/Heart.svg" alt="heart"></a></li>
@@ -71,24 +71,28 @@
 <!-- HERO SECTION -->
 
 
-<!-- LOGIN -->
+<!-- DETAILS -->
 
-<div class="login-section login">
-    <h2 class="login__title">
-        Login
-    </h2>
-    <p class="login__text">Please login using account detail below</p>
-
-    <div class="login__email">
-        <img src="./images/email-login.svg" alt="email">
-        <input class="login__input" type="email" autocomplete="off" placeholder="" required>
+<div class="details-section-wrapper">
+    <div class="container">
+        <div class="details-section details">
+            <div class="details-left">
+                <div class="img-magnifier-container">
+                    <img class="details__left-image" id="myimage" src="./images/details-loop-image.png" width="499" height="496">
+                  </div>
+            </div>
+            <div class="details__right">
+                <p class="details__suptext">For other users, see Laser (diasambigaution)</p>
+                <h2 class="detrails__title">LASER JET</h2>
+                <p class="details__subtext">A laser is a device that emits light through a process of optical amplification based on the simulated emission of eectromagnetic radiation.</p>
+                <p class="details__text">Aviable not in stock work with just booking</p>
+                <div class="details__price-box">
+                    <p class="details__price">$ 1200</p>
+                    <a class="details__link" href="#">Booking now</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="login__password">
-        <img src="./images/password.svg" alt="login">
-        <input class="login__input" type="password" autocomplete="off" placeholder="" required>
-    </div>
-    <div class="login__link"><a href="#" class="login__signIn">Sign in</a></div>
-    <div class="login__sign"><a href="https://www.google.com/intl/uz/account/about/" class="login__signUp">Sign up with google?</a></div>
 </div>
 
 
@@ -196,6 +200,7 @@
 </div>
 <script>
 
+magnify("myimage", 3);
 </script>
 </body>
 
