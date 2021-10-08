@@ -841,6 +841,42 @@ header {
   text-transform: uppercase;
 }
 
+.products__box {
+  display: none;
+  position: absolute;
+  top: 100px;
+}
+
+.products-dropdown-item {
+  padding-top: 5px;
+}
+
+.products-dropdown-link {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  margin-top: 10px;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151875;
+}
+
+.products-dropdown-link:hover {
+  color: #fb2e86;
+}
+
+.products-dropdown:hover .products__box {
+  display: block;
+}
+
 .card {
   padding: 0;
   margin: 0;
@@ -2696,23 +2732,28 @@ footer {
 }
 
 .img-magnifier-container {
-  width: 500px;
-  padding-top: 10px;
+  width: 550px;
   overflow: hidden;
 }
 
-.img-magnifier-container::after {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  top: -450px;
-  left: 450px;
-  content: url("../../images/search-loop.png");
+.img-magnifier-container:hover .details__left-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .details__left-image {
-  border-right: 2px solid #686868;
-  padding-right: 20px;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation-name: details;
+          animation-name: details;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
 }
 
 .details__right {
@@ -2802,5 +2843,51 @@ footer {
 
 .details__link:hover {
   background-color: #fb2e86;
+}
+
+@-webkit-keyframes details {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+}
+
+@keyframes details {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
