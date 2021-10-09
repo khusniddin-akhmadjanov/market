@@ -11,17 +11,14 @@
 }
 
 .img-magnifier-container:hover  .details__left-image {
-    transform: scale(1.1);
+    transform: scale(1) translateX(50px);
 }   
 
 .details__left-image {
     padding: 0;
     margin: 0;
     transition: all .5s ease-in;
-    transform: scale(0.7);
-    animation-name: details;
-    animation-duration: 3s;
-    animation-delay: -2s;
+    transform: scale(0.9) translateX(50px);
 }
 
 .details__right {
@@ -104,24 +101,135 @@
     background-color: $secondary-color;
 }
 
-@keyframes details {
-    0% {
-        transform: scale(0.8);
-    }
-    
-    25% {
-        transform: scale(0.9);
-    }
+.table {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
 
-    50% {
-        transform: scale(1);
-    }
+.thead {
+    padding: 0;
+    margin: 0;
+    padding: 5px 0  ;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    background-color: $primary-color;
+    text-align: center;
+}
 
-    75% {
-        transform: scale(1.1);
-    }
+.tr {
+    display: flex;
+}
 
-    100% {
-        transform: translate(50px);
-    }
+.tr:nth-child(2n-1) {
+    background-color: rgba(21, 24, 117, 0.3);
+}
+
+.tr:nth-child(2n) {
+    background-color: rgba(21, 24, 117, 0.8);
+}
+
+.td:nth-child(2n-1) {
+    border-right: 2px solid #686868;
+}
+
+.td {
+    width: 470px;
+    padding: 6px 0;
+    padding-left: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.details-mark {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+    margin-top: 34px;
+}
+
+.mark {
+    padding: 53px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.mark__title {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000;
+}
+
+.mark__text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.mark__badge {
+    display: flex;
+    align-items: center;
+}
+
+.mark__degre {
+    width: 181px;
+    height: 16px;
+    border-radius: 20px;
+    margin: 0 5px;
+    background-color: #f3f4ff;
+}
+
+.mark__degre-light {
+    width: 123px;
+    height: 16px;
+    border-radius: 20px;
+    margin: 0 5px;
+    background-color: #f8b50b;
+}
+
+.mark__degre-score {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #c4c4c4;
+}
+
+.mark__input {
+    width: 240px;
+    background-color: #f3f4ff;
+    padding: 11px 0;
+    padding-left: 25px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.mark__textarea {
+    width: 240px;
+    height: 104px;
+    background-color: #f3f4ff;
+    padding: 11px 0;
+    padding-left: 25px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+
+::placeholder {
+    color: $secondary-color
 }
