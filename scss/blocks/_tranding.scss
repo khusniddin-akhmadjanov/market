@@ -29,6 +29,12 @@
     cursor: pointer;
 }
 
+.tranding__button-images {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-5px);
+}
+
 .tranding__img{
     background-color: #f3f4ff;
     transition: all .3s ease-in;

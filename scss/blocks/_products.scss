@@ -43,6 +43,10 @@
   display: block;
 }
 
+.content > div >h3 {
+  transform: translateX(20px);
+}
+
 .card {
   padding: 0;
   margin: 0;
@@ -78,12 +82,11 @@
 
 .card:hover .content > div >h3{
   color: #fff;
-  transform: translateX(40px);
   transition: all .3s ease-in;
 }
 
 .card:hover .content div > button > svg >path{
-  display: none;
+  fill: #fff;
 }
 
 .card:hover  .card__image-link{

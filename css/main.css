@@ -877,6 +877,11 @@ header {
   display: block;
 }
 
+.content > div > h3 {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
 .card {
   padding: 0;
   margin: 0;
@@ -914,14 +919,12 @@ header {
 
 .card:hover .content > div > h3 {
   color: #fff;
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
 
 .card:hover .content div > button > svg > path {
-  display: none;
+  fill: #fff;
 }
 
 .card:hover .card__image-link {
@@ -1159,7 +1162,7 @@ header {
 }
 
 .latest__item {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   position: relative;
 }
 
@@ -1559,6 +1562,13 @@ header {
   -webkit-box-shadow: 0 0 24px 5px #f3f4ff;
           box-shadow: 0 0 24px 5px #f3f4ff;
   cursor: pointer;
+}
+
+.tranding__button-images {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .tranding__img {
@@ -2994,5 +3004,191 @@ footer {
 
 ::placeholder {
   color: #fb2e86;
+}
+
+.about-us-section {
+  margin-top: 50px;
+}
+
+.about-us-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-us-title {
+  padding: 0;
+  margin: 0;
+  width: 487px;
+  margin-bottom: 28px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  color: #151875;
+}
+
+.about-us-text {
+  padding: 0;
+  margin: 0;
+  width: 435px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 50%;
+  color: #151875;
+  margin-bottom: 42px;
+}
+
+.about-us-link {
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #fb2e86;
+  padding: 4px 34px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.about-us-link:hover {
+  background-color: #151875;
+}
+
+.features-title {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: #151875;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 33px;
+}
+
+.features-item {
+  width: 260px;
+  padding-top: 10px;
+  background-color: #f3f4ff;
+  text-align: center;
+}
+
+.features-item-image {
+  background-color: rgba(54, 59, 113, 0.5);
+  padding: 27px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 88px;
+}
+
+.faq {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.questions__title {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: #151875;
+  margin-bottom: 30px;
+}
+
+.questions__text {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #151875;
+  margin-bottom: 15px;
+}
+
+.question__ask {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151875;
+  opacity: 50%;
+  margin-bottom: 30px;
+  width: 560px;
+  text-align: justify;
+}
+
+.faq__form {
+  background-color: #f3f4ff;
+  padding: 0 48px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.faq__form-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 60px;
+  color: #151875;
+}
+
+.faq__input {
+  width: 275px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 30px;
+  padding: 9px 0;
+  padding-left: 6px;
+}
+
+.faq__button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #fb2e86;
+  border: none;
+  padding: 6px 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

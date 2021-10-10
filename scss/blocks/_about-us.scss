@@ -1,0 +1,94 @@
+.about-us-section {
+  margin-top: 50px;
+}
+
+.about-us-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-us-title {
+  padding: 0;
+  margin: 0;
+  width: 487px;
+  margin-bottom: 28px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  color: $primary-color;
+}
+
+.about-us-text {
+  padding: 0;
+  margin: 0;
+  width: 435px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 50%;
+  color: $primary-color;
+  margin-bottom: 42px;
+}
+
+.about-us-link {
+  @include link-unstyled;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+  background-color: $secondary-color;
+  padding: 4px 34px;
+  transition: all 0.3s ease-in;
+}
+
+.about-us-link:hover {
+  background-color: $primary-color;
+}
+
+.features-title {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.features-list {
+  @include list-unstyled;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+
+.features-item {
+  width: 260px;
+  padding-top: 10px;
+  background-color: #f3f4ff;
+  text-align: center;
+}
+
+.features-item-image {
+  background-color: rgba(54, 59, 113, 0.5);
+  padding: 27px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 88px;
+}
+
